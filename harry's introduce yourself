@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduce Myself</title>
+
+    <style>
+        /* ===== GENERAL ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* ===== PROFILE ===== */
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+
+            border-radius: 20px;
+            margin-bottom: 25px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ===== PROFILE PICTURE ===== */
+
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+
+            object-fit: cover;
+            border-radius: 50%;
+
+            border: 5px solid white;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ===== PROFILE INFORMATION ===== */
+
+        .profile-info h1 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .profile-info h1 span {
+            color: #00d9ff;
+        }
+
+        .profile-info p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .intro {
+            color: #ddd;
+        }
+
+        /* ===== CARDS ===== */
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            margin-bottom: 25px;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ===== HEADINGS ===== */
+
+        .card h2,
+        .motto h2 {
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+
+        /* ===== HOBBIES ===== */
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            background: rgba(255, 255, 255, 0.08);
+
+            padding: 12px;
+
+            margin: 8px 0;
+
+            border-radius: 10px;
+        }
+
+        .card p {
+            background: rgba(255, 255, 255, 0.08);
+
+            padding: 12px;
+
+            margin: 8px 0;
+
+            border-radius: 10px;
+        }
+
+        /* ===== DREAMS ===== */
+
+        .card p {
+            line-height: 1.8;
+            color: #eee;
+        }
+
+        /* ===== MOTTO ===== */
+
+        .motto {
+            text-align: center;
+
+            background: rgba(0, 217, 255, 0.15);
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            border: 1px solid rgba(0, 217, 255, 0.4);
+
+            margin-bottom: 25px;
+        }
+
+        .motto p {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            text-align: center;
+            color: #aaa;
+            padding: 20px;
+        }
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 700px) {
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-info h1 {
+                font-size: 28px;
+            }
+
+            .profile-image img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PROFILE -->
+        <section class="profile">
+
+            <div class="profile-image">
+
+                <!-- PUT YOUR PICTURE HERE -->
+                <img src="abdul.png" alt="My Picture">
+
+            </div>
+
+            <div class="profile-info">
+
+                <h1>
+                    Hello! I'm
+                    <span>Harry</span>
+                </h1>
+
+                <p class="intro">
+                   My name is Abdul-Harry Mohammad or you can call me Harry. I am 20 years old. I'm not a muslim now if you asking, I already converted in christian.
+                   And I'm live at Macapagal Village.
+                </p>
+               
+            </div>
+
+        </section>
+
+
+        <!-- HOBBIES -->
+        <section class="card">
+
+            <h2> My Hobbies</h2>
+
+            <ul>
+
+                <li>🎮 Playing video games</li>
+                <p> I play online games like Mobile Legends and Call of duty</p>
+
+                <li>🎵 Listening to music</li>
+                <p>I listening to music when I have to do like assignment or a housework</p>
+
+                <li>🎬 Watching Anime</li>
+                <p>I love watching anime, I always watching when my work is done or I have a time to watch</p>
+
+            </ul>
+
+        </section>
+
+
+        <!-- DREAMS -->
+        <section class="card">
+
+            <h2> My Dreams</h2>
+
+            <p>
+                My dream is to become successful in the future
+                and have a career that I enjoy.Finish my studies, help my family,
+                and achieve my goals through hard work and
+                determination.
+            </p>
+
+        </section>
+
+
+        <!-- MOTTO -->
+        <section class="motto">
+
+            <h2>My Motto</h2>
+
+            <p>
+                "If you can Dream it, You can do it."
+            </p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>Email: harryhufana23@gmail.com</p>
+
+            <p>Contact number: 09096281106</p>
+
+             <p>&copy; 2026 Harry Mohammad. All rights reserved.</p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
